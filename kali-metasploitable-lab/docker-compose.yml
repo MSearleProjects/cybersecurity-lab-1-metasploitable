@@ -1,0 +1,20 @@
+services:
+  kali:
+    image: kalilinux/kali-rolling
+    container_name: kali
+    tty: true
+    stdin_open: true
+    networks:
+      - pentest-net
+
+  metasploitable:
+    image: tleemcjr/metasploitable2
+    container_name: metasploitable
+    tty: true
+    stdin_open: true
+    networks:
+      - pentest-net
+
+networks:
+  pentest-net:
+    driver: bridge
