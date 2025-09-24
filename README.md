@@ -33,7 +33,7 @@ docker exec -it kali bash
 ```
 ping metasploitable
 ```
-The IP address that comes back is `172.18.0.3`
+  The IP address that comes back is `172.18.0.3`
 
 3. **Run the Nmap scan**:
 ```
