@@ -70,4 +70,5 @@ msf6 > exploit
 ***
 ## Conclusion
 This lab demonstrates the core steps of a penetration test, from initial network scanning to gaining unauthorised access. The `vsfptd` vulnerability, while simple, serves as an example of how critical it is to keep software patched and updated.
+
 **Disclaimer**: This lab was conducted in a controlled, isolated environment for educational purposes. Unauthorised access to any computer system is illegal and uethical.
