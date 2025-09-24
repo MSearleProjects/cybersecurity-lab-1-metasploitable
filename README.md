@@ -34,11 +34,13 @@ docker exec -it kali bash
 ping metasploitable
 ```
 The IP address that comes back is `172.18.0.3`
+
 3. **Run the Nmap scan**:
 ```
 nmap -sV -sC 172.18.0.3
 ```
 `-sV` means Service Version Detection and tells Nmap to attempt to determine the **service name and version number** of whats running on each port. `-sC` is a shortcut for `--script=default` and tells Nmap to run a set of default scripts against the target which include **vulnerability checks**, **enumeration** and **misconfiguration audits**.
+
 **Findings**
 The Nmap scan revealed several services with outdated and vulnerable versions.
 * **FTP**: `vsftpd 2.3.4` running on port `21/tcp`.
