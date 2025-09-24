@@ -5,4 +5,4 @@ This repository documents a cybersecurity lab that demonstrates the process of *
 The primary objective was to identify and exploit common, well-known vulnerabilities to gain a comman shell on the target system.
 ***
 ## Lab Environment Setup
-The lab was built using **Docker** and **Docker Compose on a Windows host machine. The '''docker-compose.yml''' file defines the two containers and a private network to allow them to communicate.
+The lab was built using **Docker** and **Docker Compose on a Windows host machine. The 'docker-compose.yml' file defines the two containers and a private network to allow them to communicate.
