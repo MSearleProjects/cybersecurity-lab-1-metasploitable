@@ -47,5 +47,6 @@ The Nmap scan revealed several services with outdated and vulnerable versions.
 * **SSH**: `OpenSSH 4.7p1` running on port `22/tcp`.
 * **Samba**: `Samba smbd 3.0.20-Debian` running on ports `139/tcp` and `445/tcp`.
 * **IRC**: `UnrealIRCd` running on port `6667/tcp`.
+
 The `vsftpd 2.3.4` version was targeted due to a well-known backdoor vulnerability.
 ***
