@@ -24,6 +24,7 @@ docker-compose up -d
 ***
 ## Lab Walkthrough
 **Reconnaissance with Nmap**
+
 After launching the containers, the first step was to get a terminal inside the Kali container and perform a network scan to identify open ports and services on the target.
 1. **Enter the Kali container**:
 ```
