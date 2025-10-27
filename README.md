@@ -42,7 +42,8 @@ nmap -sV -sC 172.18.0.3
 ```
 `-sV` means Service Version Detection and tells Nmap to attempt to determine the **service name and version number** of whats running on each port. `-sC` is a shortcut for `--script=default` and tells Nmap to run a set of default scripts against the target which include **vulnerability checks**, **enumeration** and **misconfiguration audits**.
 
-**Findings**
+4. **Findings**
+
 The Nmap scan revealed several services with outdated and vulnerable versions.
 * **FTP**: `vsftpd 2.3.4` running on port `21/tcp`.
 * **SSH**: `OpenSSH 4.7p1` running on port `22/tcp`.
